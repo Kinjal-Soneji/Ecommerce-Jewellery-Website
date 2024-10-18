@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login - Ecommerce Jewellery Website</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" /> 
+    <!-- OWN CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive-style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- Header Design -->
+    <header>
+        <div class="top-header">
+            <div class="container d-flex justify-content-between align-items-center py-3">
+                <span>Free shipping for orders over </span>
+                <span>Call: 800-6688-999</span>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img decoding="async" src="images/logo.png" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-stream navbar-toggler-icon"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="new-arrivals.html">New Arrivals</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="products.html">Products</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link" href="deal-of-the-day.html">Deal of the day</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="wishlist.html">Wishlist</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cart.html">Cart</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section-7 Login -->
+    
+	<a href="https://front.codes/" class="logo" target="_blank">
+		<img src="https://assets.codepen.io/1462889/fcy.png" alt="">
+	</a>
+
+	<div class="section">
+		<div class="container">
+            			<div class="row full-height justify-content-center">
+				<div class="col-12 text-center align-self-center py-5">
+					<div class="section pb-5 pt-5 pt-sm-2 text-center">
+						<h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
+			          	<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+			          	<label for="reg-log"></label>
+						<div class="card-3d-wrap mx-auto">
+							<div class="card-3d-wrapper">
+								<div class="card-front">
+									<form id="loginForm">
+										<div class="center-wrap">
+											<div class="section text-center">
+												<h4 class="mb-4 pb-3">Log In</h4>
+												<div class="form-group">
+													<input type="text" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
+													<i class="input-icon uil uil-at"></i>
+                                                    <span id="emailError" class="error"></span>
+												</div>	
+												<div class="form-group mt-2">
+													<input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
+													<i class="input-icon uil uil-lock-alt"></i>
+                                                    <span id="passwordError" class="error"></span> 
+												</div>
+												<button type="submit" class="btn mt-4" id="loginSubmit">submit</button>
+                                                <p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="card-back">
+                                    <form id="signupForm">
+                                        <div class="center-wrap">
+                                            <div class="section text-center">
+                                                <h4 class="mb-4 pb-3">Sign Up</h4>
+                                                <div class="form-group">
+                                                    <input type="text" name="logname" class="form-style" placeholder="Your Full Name" id="logname" autocomplete="off">
+                                                    <i class="input-icon uil uil-user"></i>
+                                                    <span id="nameError" class="error"></span>
+                                                </div>  
+                                                <div class="form-group mt-2">
+                                                    <input type="text" name="signupEmail" class="form-style" placeholder="Your Email" id="signupEmail" autocomplete="off">
+                                                    <i class="input-icon uil uil-at"></i>
+                                                    <span id="signupEmailError" class="error"></span>
+                                                </div>  
+                                                <div class="form-group mt-2">
+                                                    <input type="password" name="signupPassword" class="form-style" placeholder="Your Password" id="signupPassword" autocomplete="off">
+                                                    <i class="input-icon uil uil-lock-alt"></i>
+                                                    <span id="signupPasswordError" class="error"></span>
+                                                </div>
+                                                <div class="form-group mt-2">
+                                                    <input type="password" name="signupPasswordConfirm" class="form-style" placeholder="Confirm Password" id="signupPasswordConfirm" autocomplete="off">
+                                                    <i class="input-icon uil uil-lock-alt"></i>
+                                                    <span id="signupPasswordConfirmError" class="error"></span>
+                                                </div>
+                                                <button type="submit" class="btn mt-4" id="signupSubmit">submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const loginForm = document.getElementById('loginForm');
+        const signupForm = document.getElementById('signupForm');
+        const regLogCheckbox = document.getElementById('reg-log');
+
+        // Regular expression for email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        // Regular expression for password validation (at least 6 characters, 1 uppercase, 1 lowercase, and 1 number)
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,}$/;
+
+        // Validation function for login form
+        loginForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            let isValid = true;
+
+            const email = document.getElementById('logemail');
+            const password = document.getElementById('logpass');
+            const emailError = document.getElementById('emailError');
+            const passwordError = document.getElementById('passwordError');
+
+            // Clear previous errors
+            emailError.textContent = '';
+            passwordError.textContent = '';
+
+            // Validate email using regular expression
+            if (!email.value) {
+                emailError.textContent = 'Email is required.';
+                isValid = false;
+            } else if (!emailRegex.test(email.value)) {
+                emailError.textContent = 'Email is invalid.';
+                isValid = false;
+            }
+
+            // Validate password
+            if (!password.value) {
+                passwordError.textContent = 'Password is required.';
+                isValid = false;
+            } else if (!passwordRegex.test(password.value)) {
+                passwordError.textContent = 'Password must contain at least 6 characters, including an uppercase, a lowercase letter, and a number.';
+                isValid = false;
+            }
+
+            if (isValid) {
+                loginForm.submit();
+            }
+        });
+
+        // Validation function for signup form
+        signupForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            let isValid = true;
+
+            const name = document.getElementById('logname');
+            const signupEmail = document.getElementById('signupEmail');
+            const signupPassword = document.getElementById('signupPassword');
+            const signupPasswordConfirm = document.getElementById('signupPasswordConfirm');
+            const nameError = document.getElementById('nameError');
+            const signupEmailError = document.getElementById('signupEmailError');
+            const signupPasswordError = document.getElementById('signupPasswordError');
+            const signupPasswordConfirmError = document.getElementById('signupPasswordConfirmError');
+
+            // Clear previous errors
+            nameError.textContent = '';
+            signupEmailError.textContent = '';
+            signupPasswordError.textContent = '';
+            signupPasswordConfirmError.textContent = '';
+
+            // Validate name (allowing alphabets and spaces, at least 2 characters)
+            const nameRegex = /^[A-Za-z\s]{2,}$/;
+            if (!name.value) {
+                nameError.textContent = 'Name is required.';
+                isValid = false;
+            } else if (!nameRegex.test(name.value)) {
+                nameError.textContent = 'Name must contain only alphabets and be at least 2 characters.';
+                isValid = false;
+            }
+
+            // Validate email using regular expression
+            if (!signupEmail.value) {
+                signupEmailError.textContent = 'Email is required.';
+                isValid = false;
+            } else if (!emailRegex.test(signupEmail.value)) {
+                signupEmailError.textContent = 'Email is invalid.';
+                isValid = false;
+            }
+
+            // Validate password using regular expression
+            if (!signupPassword.value) {
+                signupPasswordError.textContent = 'Password is required.';
+                isValid = false;
+            } else if (!passwordRegex.test(signupPassword.value)) {
+                signupPasswordError.textContent = 'Password must contain at least 6 characters, including an uppercase, a lowercase letter, and a number.';
+                isValid = false;
+            }
+
+            // Confirm password validation
+            if (signupPassword.value !== signupPasswordConfirm.value) {
+                signupPasswordConfirmError.textContent = 'Passwords do not match.';
+                isValid = false;
+            }
+
+            if (isValid) {
+                signupForm.submit();
+            }
+        });
+
+        // Reset error messages when switching tabs
+        regLogCheckbox.addEventListener('change', function () {
+            if (this.checked) {
+                // Reset login form error messages
+                document.getElementById('emailError').textContent = '';
+                document.getElementById('passwordError').textContent = '';
+            } else {
+                // Reset signup form error messages
+                document.getElementById('nameError').textContent = '';
+                document.getElementById('signupEmailError').textContent = '';
+                document.getElementById('signupPasswordError').textContent = '';
+                document.getElementById('signupPasswordConfirmError').textContent = '';
+            }
+        });
+    });
+</script>
+
+    <!-- JS Libraries --> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+    <!-- own js -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
+    
+
